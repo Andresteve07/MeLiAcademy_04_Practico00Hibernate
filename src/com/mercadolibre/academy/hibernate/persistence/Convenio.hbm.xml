@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
           
 <hibernate-mapping>
-	<class name="com.mercadolibre.academy.hibernate.entity.Vuelo" table="vuelo">
+	<class name="com.mercadolibre.academy.hibernate.entity.Convenio" table="convenio">
 		<id column="id_aerolinea" name="id" type="integer">
 			<generator class="increment"></generator>
 		</id>
