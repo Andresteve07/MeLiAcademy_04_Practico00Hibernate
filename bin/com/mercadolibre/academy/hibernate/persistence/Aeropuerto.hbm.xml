@@ -11,8 +11,6 @@
 		<property name="nombre"/>
 		<property name="origen"/>
 		<property name="destino"/>
-		
-		<one-to-one name="aerolinea" cascade="all"></one-to-one>
-		
+				
 	</class>          
 </hibernate-mapping>

@@ -10,7 +10,9 @@
 		</id>
 		<property name="nombre"/>
 		<property name="origen"/>
-		<one-to-one name="aerolinea" cascade="all"></one-to-one>
+		<many-to-one name="aerolinea">
+			<column name="id_aerolinea"/>
+		</many-to-one>
 		
 	</class>          
 </hibernate-mapping>

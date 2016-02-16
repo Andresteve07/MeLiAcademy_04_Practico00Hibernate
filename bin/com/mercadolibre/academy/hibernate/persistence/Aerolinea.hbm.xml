@@ -10,5 +10,13 @@
 		</id>
 		<property name="nombre"/>
 		<property name="origen"/>
+		
+		<set name="vuelos" cascade="all">
+			<key>
+				<column name="id_aerolinea"></column>
+			</key>
+			<one-to-many
+				class="com.mercadolibre.academy.hibernate.entity.Vuelos"/>
+		</set>
 	</class>          
 </hibernate-mapping>
