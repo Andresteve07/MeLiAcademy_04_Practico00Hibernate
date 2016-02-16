@@ -4,13 +4,20 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
           
 <hibernate-mapping>
-	<class name="com.mercadolibre.academy.hibernate.entity.Vuelo" table="vuelo">
-		<id column="id_aerolinea" name="id" type="integer">
+	<class name="com.mercadolibre.academy.hibernate.entity.Aeropuerto" table="aeropuerto">
+		<id column="id_aeropuerto" name="id" type="integer">
 			<generator class="increment"></generator>
 		</id>
 		<property name="nombre"/>
-		<property name="origen"/>
+		<property name="ubicacion"/>
 		<property name="destino"/>
+		<set name="aerolineas" cascade="all">
+			<key>
+				<column name="id_aeropuerto"></column>
+			</key>
+			<one-to-many
+				class="com.mercadolibre.academy.hibernate.entity.Aerolinea"/>
+		</set>
 				
 	</class>          
 </hibernate-mapping>

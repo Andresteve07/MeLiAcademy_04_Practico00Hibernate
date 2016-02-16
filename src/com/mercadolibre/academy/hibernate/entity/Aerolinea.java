@@ -17,8 +17,6 @@ public class Aerolinea implements Serializable{
 	private String origen;
 	
 	private Set<Vuelo> vuelos;
-//	
-//	private Set<Aeropuerto> aeropuertos;
 	
 	public Aerolinea(){
 		
@@ -51,14 +49,6 @@ public class Aerolinea implements Serializable{
 	public void setVuelos(Set<Vuelo> vuelos) {
 		this.vuelos = vuelos;
 	}
-//
-//	public Set<Aeropuerto> getAeropuertos() {
-//		return aeropuertos;
-//	}
-//
-//	public void setAeropuertos(Set<Aeropuerto> aeropuertos) {
-//		this.aeropuertos = aeropuertos;
-//	}
 
 	public String getOrigen() {
 		return origen;

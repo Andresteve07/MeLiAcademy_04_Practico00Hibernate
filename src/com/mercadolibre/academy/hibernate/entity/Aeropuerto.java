@@ -15,24 +15,6 @@ public class Aeropuerto implements Serializable{
 	private String nombre;
 	
 	private String ubicacion;
-	
-	private Set<Vuelo> vuelos;
-	
-	public Set<Vuelo> getVuelos() {
-		return vuelos;
-	}
-
-	public void setVuelos(Set<Vuelo> vuelos) {
-		this.vuelos = vuelos;
-	}
-
-	public Set<Aerolinea> getAerolineas() {
-		return aerolineas;
-	}
-
-	public void setAerolineas(Set<Aerolinea> aerolineas) {
-		this.aerolineas = aerolineas;
-	}
 
 	private Set<Aerolinea> aerolineas;
 	
@@ -68,5 +50,12 @@ public class Aeropuerto implements Serializable{
 		this.ubicacion = ubicacion;
 	}
 	
+	public Set<Aerolinea> getAerolineas() {
+		return aerolineas;
+	}
+
+	public void setAerolineas(Set<Aerolinea> aerolineas) {
+		this.aerolineas = aerolineas;
+	}
 	
 }

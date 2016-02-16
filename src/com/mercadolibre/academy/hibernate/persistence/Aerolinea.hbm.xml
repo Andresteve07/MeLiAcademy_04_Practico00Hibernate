@@ -18,5 +18,10 @@
 			<one-to-many
 				class="com.mercadolibre.academy.hibernate.entity.Vuelos"/>
 		</set>
+		
+		<many-to-one name="aeropuerto">
+			<column name="id_aeropuerto"/>
+		</many-to-one>
+		
 	</class>          
 </hibernate-mapping>
