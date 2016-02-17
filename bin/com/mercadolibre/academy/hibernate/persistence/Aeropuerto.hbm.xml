@@ -10,7 +10,6 @@
 		</id>
 		<property name="nombre"/>
 		<property name="ubicacion"/>
-		<property name="destino"/>
 		<set name="aerolineas" cascade="all">
 			<key>
 				<column name="id_aeropuerto"></column>

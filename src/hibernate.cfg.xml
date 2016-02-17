@@ -15,8 +15,8 @@
  		<mapping resource="com/mercadolibre/academy/hibernate/persistence/Aeropuerto.hbm.xml"/>
  		<mapping class="com.mercadolibre.academy.hibernate.entity.Aerolinea"/>
  		
- 		<mapping resource="com/mercadolibre/academy/hibernate/persistence/Convenio.hbm.xml"/>
- 		<mapping class="com.mercadolibre.academy.hibernate.entity.Convenio"/>
+<!--  		<mapping resource="com/mercadolibre/academy/hibernate/persistence/Convenio.hbm.xml"/> -->
+<!--  		<mapping class="com.mercadolibre.academy.hibernate.entity.Convenio"/> -->
  		
  		<mapping resource="com/mercadolibre/academy/hibernate/persistence/Vuelo.hbm.xml"/>
  		<mapping class="com.mercadolibre.academy.hibernate.entity.Vuelo"/>

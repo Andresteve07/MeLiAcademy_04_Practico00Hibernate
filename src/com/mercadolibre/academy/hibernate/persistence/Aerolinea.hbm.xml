@@ -9,14 +9,14 @@
 			<generator class="increment"></generator>
 		</id>
 		<property name="nombre"/>
-		<property name="origen"/>
+		<property name="paisOrigen" column="pais_origen"/>
 		
 		<set name="vuelos" cascade="all">
 			<key>
 				<column name="id_aerolinea"></column>
 			</key>
 			<one-to-many
-				class="com.mercadolibre.academy.hibernate.entity.Vuelos"/>
+				class="com.mercadolibre.academy.hibernate.entity.Vuelo"/>
 		</set>
 		
 		<many-to-one name="aeropuerto">

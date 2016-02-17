@@ -13,6 +13,10 @@ public class Vuelo implements Serializable{
 	private int id;
 	private Aeropuerto origen;
 	private Aeropuerto destino;
+	
+//	private int idOrigen;
+//	private int idDestino;
+	
 	private Aerolinea aerolinea;
 	
 	public Vuelo(){

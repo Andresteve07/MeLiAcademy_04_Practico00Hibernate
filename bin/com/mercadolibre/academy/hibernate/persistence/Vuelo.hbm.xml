@@ -5,11 +5,11 @@
           
 <hibernate-mapping>
 	<class name="com.mercadolibre.academy.hibernate.entity.Vuelo" table="vuelo">
-		<id column="id_aerolinea" name="id" type="integer">
+		<id column="id_vuelo" name="id" type="integer">
 			<generator class="increment"></generator>
 		</id>
-		<property name="nombre"/>
-		<property name="origen"/>
+		<property name="origen" column="id_aeropuerto_orig"/>
+		<property name="destino" column="id_aeropuerto_dest"/>
 		<many-to-one name="aerolinea">
 			<column name="id_aerolinea"/>
 		</many-to-one>

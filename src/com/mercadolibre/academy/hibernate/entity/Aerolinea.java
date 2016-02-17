@@ -14,16 +14,33 @@ public class Aerolinea implements Serializable{
 	
 	private String nombre;
 	
-	private String origen;
+	private String paisOrigen;
 	
 	private Set<Vuelo> vuelos;
 	
+	private Aeropuerto aeropuerto;
+	
+	public void agregarVuelo(Vuelo vuelo) throws Exception{
+		if(this.vuelos.contains(vuelo))
+			throw new Exception("Vuelo repetido en aerolinea"+ this.nombre);
+		this.vuelos.add(vuelo);
+	}
+	
+	public Aeropuerto getAeropuerto() {
+		return aeropuerto;
+	}
+
+	public void setAeropuerto(Aeropuerto aeropuerto) {
+		this.aeropuerto = aeropuerto;
+	}
+
 	public Aerolinea(){
 		
 	}
 	
-	public Aerolinea(String nombre){
-		
+	public Aerolinea(String nombre, String paisOrigen){
+		this.nombre = nombre;
+		this.paisOrigen = paisOrigen;
 	}
 
 	public int getId() {
@@ -50,12 +67,12 @@ public class Aerolinea implements Serializable{
 		this.vuelos = vuelos;
 	}
 
-	public String getOrigen() {
-		return origen;
+	public String getPaisOrigen() {
+		return paisOrigen;
 	}
 
-	public void setOrigen(String origen) {
-		this.origen = origen;
+	public void setPaisOrigen(String paisOrigen) {
+		this.paisOrigen = paisOrigen;
 	}
 	
 	

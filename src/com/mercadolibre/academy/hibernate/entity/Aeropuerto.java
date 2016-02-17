@@ -22,8 +22,9 @@ public class Aeropuerto implements Serializable{
 		
 	}
 	
-	public Aeropuerto(String nombre, int código){
-		
+	public Aeropuerto(String nombre, String ubicacion){
+		this.nombre = nombre;
+		this.ubicacion= ubicacion;
 	}
 
 	public int getId() {
